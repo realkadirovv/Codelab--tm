@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "your_project_name/wsgi.py",
+      "src": "codelab/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.12" }
     },
@@ -19,7 +19,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "your_project_name/wsgi.py"
+      "dest": "codelab/wsgi.py"
     }
   ]
 }
